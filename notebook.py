@@ -7,7 +7,7 @@ app = marimo.App()
 @app.cell
 def _(mo):
     mo.md("""
-    # Jacobs ML Demo
+    # ML Demo
     """)
     return
 
