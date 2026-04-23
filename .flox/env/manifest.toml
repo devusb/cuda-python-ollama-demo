@@ -1,0 +1,36 @@
+schema-version = "1.12.0"
+
+[install]
+torch.pkg-path = "flox-cuda/python3Packages.torch"
+torch.pkg-group = "torch"
+torch.systems = ["x86_64-linux", "aarch64-linux"]
+torchvision.pkg-path = "flox-cuda/python3Packages.torchvision"
+torchvision.pkg-group = "torchvision"
+torchvision.systems = ["x86_64-linux", "aarch64-linux"]
+faiss.pkg-path = "flox-cuda/python3Packages.faiss"
+faiss.pkg-group = "faiss"
+faiss.systems = ["x86_64-linux", "aarch64-linux"]
+ollama.pkg-path = "flox-cuda/ollama"
+ollama.pkg-group = "ollama"
+ollama.systems = ["x86_64-linux", "aarch64-linux"]
+marimo.pkg-path = "marimo"
+typing-extensions.pkg-path = "python313Packages.typing-extensions"
+sympy.pkg-path = "python313Packages.sympy"
+
+[vars]
+
+[hook]
+on-activate = '''
+'''
+
+[profile]
+common = '''
+  alias pull="ollama pull qwen2.5:0.5b"
+  alias notebook="marimo edit notebook.py"
+'''
+
+[services]
+ollama.command = "ollama serve"
+
+[options]
+systems = ["x86_64-linux", "aarch64-linux"]

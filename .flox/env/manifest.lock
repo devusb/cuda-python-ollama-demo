@@ -1,0 +1,503 @@
+{
+  "lockfile-version": 1,
+  "manifest": {
+    "schema-version": "1.12.0",
+    "install": {
+      "faiss": {
+        "pkg-path": "flox-cuda/python3Packages.faiss",
+        "pkg-group": "faiss",
+        "systems": [
+          "x86_64-linux",
+          "aarch64-linux"
+        ]
+      },
+      "marimo": {
+        "pkg-path": "marimo"
+      },
+      "ollama": {
+        "pkg-path": "flox-cuda/ollama",
+        "pkg-group": "ollama",
+        "systems": [
+          "x86_64-linux",
+          "aarch64-linux"
+        ]
+      },
+      "sympy": {
+        "pkg-path": "python313Packages.sympy"
+      },
+      "torch": {
+        "pkg-path": "flox-cuda/python3Packages.torch",
+        "pkg-group": "torch",
+        "systems": [
+          "x86_64-linux",
+          "aarch64-linux"
+        ]
+      },
+      "torchvision": {
+        "pkg-path": "flox-cuda/python3Packages.torchvision",
+        "pkg-group": "torchvision",
+        "systems": [
+          "x86_64-linux",
+          "aarch64-linux"
+        ]
+      },
+      "typing-extensions": {
+        "pkg-path": "python313Packages.typing-extensions"
+      }
+    },
+    "hook": {
+      "on-activate": ""
+    },
+    "profile": {
+      "common": "  alias pull=\"ollama pull qwen2.5:0.5b\"\n  alias notebook=\"marimo edit notebook.py\"\n"
+    },
+    "options": {
+      "systems": [
+        "x86_64-linux",
+        "aarch64-linux"
+      ]
+    },
+    "services": {
+      "ollama": {
+        "command": "ollama serve"
+      }
+    }
+  },
+  "packages": [
+    {
+      "attr_path": "python3Packages.faiss",
+      "broken": false,
+      "derivation": "/nix/store/k7yhdh4annlhx8f429r6lk79pk2a08i7-python3.13-faiss-1.14.1.drv",
+      "description": "Bindings for faiss, the similarity search library",
+      "install_id": "faiss",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=4bd9165a9165d7b5e33ae57f3eecbcb28fb231c9",
+      "name": "python3.13-faiss-1.14.1",
+      "pname": "faiss",
+      "rev": "4bd9165a9165d7b5e33ae57f3eecbcb28fb231c9",
+      "rev_count": 980183,
+      "rev_date": "2026-04-14T12:31:25Z",
+      "scrape_date": "2026-04-23T08:48:13.238508279Z",
+      "stabilities": [
+        "unstable",
+        "staging"
+      ],
+      "unfree": false,
+      "version": "1.14.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dist": "/nix/store/15hjzy05mpr6i3wbirjz9v0dlw3p8jzj-python3.13-faiss-1.14.1-dist",
+        "out": "/nix/store/90rhb71ax41083nf2m91k61wzka6x1b1-python3.13-faiss-1.14.1"
+      },
+      "system": "aarch64-linux",
+      "group": "faiss",
+      "priority": 5
+    },
+    {
+      "attr_path": "python3Packages.faiss",
+      "broken": false,
+      "derivation": "/nix/store/ishk580jlzcxmpy6v2d9rr3z392hhabn-python3.13-faiss-1.14.1.drv",
+      "description": "Bindings for faiss, the similarity search library",
+      "install_id": "faiss",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=4bd9165a9165d7b5e33ae57f3eecbcb28fb231c9",
+      "name": "python3.13-faiss-1.14.1",
+      "pname": "faiss",
+      "rev": "4bd9165a9165d7b5e33ae57f3eecbcb28fb231c9",
+      "rev_count": 980183,
+      "rev_date": "2026-04-14T12:31:25Z",
+      "scrape_date": "2026-04-23T08:48:13.238542463Z",
+      "stabilities": [
+        "unstable",
+        "staging"
+      ],
+      "unfree": false,
+      "version": "1.14.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dist": "/nix/store/djzm9i26xwx5gg2hm5hj92dhq2nl8ms4-python3.13-faiss-1.14.1-dist",
+        "out": "/nix/store/ir55p74x5dznnvdnrfnhwhyvqpbs39sa-python3.13-faiss-1.14.1"
+      },
+      "system": "x86_64-linux",
+      "group": "faiss",
+      "priority": 5
+    },
+    {
+      "attr_path": "ollama",
+      "broken": false,
+      "derivation": "/nix/store/mdyaayk1wq7hzd9zcmgm3khpkiir9443-ollama-0.20.7.drv",
+      "description": "Get up and running with large language models locally, using CUDA for NVIDIA GPU acceleration",
+      "install_id": "ollama",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b12141ef619e0a9c1c84dc8c684040326f27cdcc",
+      "name": "ollama-0.20.7",
+      "pname": "ollama-cuda",
+      "rev": "b12141ef619e0a9c1c84dc8c684040326f27cdcc",
+      "rev_count": 982522,
+      "rev_date": "2026-04-18T21:33:21Z",
+      "scrape_date": "2026-04-23T08:48:13.238572059Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "ollama-0.20.7",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/96ccn0gz3k2savj2qisjr191jycahddj-ollama-0.20.7"
+      },
+      "system": "aarch64-linux",
+      "group": "ollama",
+      "priority": 5
+    },
+    {
+      "attr_path": "ollama",
+      "broken": false,
+      "derivation": "/nix/store/pr8602q4w23aipy4fk0nw6mgqrzf9vdz-ollama-0.20.7.drv",
+      "description": "Get up and running with large language models locally, using CUDA for NVIDIA GPU acceleration",
+      "install_id": "ollama",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b12141ef619e0a9c1c84dc8c684040326f27cdcc",
+      "name": "ollama-0.20.7",
+      "pname": "ollama-cuda",
+      "rev": "b12141ef619e0a9c1c84dc8c684040326f27cdcc",
+      "rev_count": 982522,
+      "rev_date": "2026-04-18T21:33:21Z",
+      "scrape_date": "2026-04-23T08:48:13.238578321Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "ollama-0.20.7",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/nilfxhvgbli1q01s4mmiq8pbh3ma82lf-ollama-0.20.7"
+      },
+      "system": "x86_64-linux",
+      "group": "ollama",
+      "priority": 5
+    },
+    {
+      "attr_path": "marimo",
+      "broken": false,
+      "derivation": "/nix/store/k0pfqb56md5ync0gbdhwixm2xxhn085d-python3.13-marimo-0.21.1.drv",
+      "description": "Reactive Python notebook that's reproducible, git-friendly, and deployable as scripts or apps",
+      "install_id": "marimo",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b12141ef619e0a9c1c84dc8c684040326f27cdcc",
+      "name": "marimo-0.21.1",
+      "pname": "marimo",
+      "rev": "b12141ef619e0a9c1c84dc8c684040326f27cdcc",
+      "rev_count": 982522,
+      "rev_date": "2026-04-18T21:33:21Z",
+      "scrape_date": "2026-04-21T06:37:10.684761Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.21.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dist": "/nix/store/z90p9xp5m32g7qa7crn3fam5am41g8ny-python3.13-marimo-0.21.1-dist",
+        "out": "/nix/store/qisnsyhgkmxarsgz76kzbyvg5ybink10-python3.13-marimo-0.21.1"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "marimo",
+      "broken": false,
+      "derivation": "/nix/store/n9l395mska8300sg6d9sfqf0br73cnhd-python3.13-marimo-0.21.1.drv",
+      "description": "Reactive Python notebook that's reproducible, git-friendly, and deployable as scripts or apps",
+      "install_id": "marimo",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b12141ef619e0a9c1c84dc8c684040326f27cdcc",
+      "name": "marimo-0.21.1",
+      "pname": "marimo",
+      "rev": "b12141ef619e0a9c1c84dc8c684040326f27cdcc",
+      "rev_count": 982522,
+      "rev_date": "2026-04-18T21:33:21Z",
+      "scrape_date": "2026-04-21T07:45:16.778888Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.21.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dist": "/nix/store/3wah5mqlj65sbc7n1x7vy90cmgsj4gkn-python3.13-marimo-0.21.1-dist",
+        "out": "/nix/store/lc8fvpgrrs61c78p35nxrgcciiwh3zid-python3.13-marimo-0.21.1"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "python313Packages.sympy",
+      "broken": false,
+      "derivation": "/nix/store/nj5vwiy4zrl7xkmiy39g8591s5nzb1wf-python3.13-sympy-1.14.0.drv",
+      "description": "Python library for symbolic mathematics",
+      "install_id": "sympy",
+      "license": "BSD-3-Clause",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b12141ef619e0a9c1c84dc8c684040326f27cdcc",
+      "name": "python3.13-sympy-1.14.0",
+      "pname": "sympy",
+      "rev": "b12141ef619e0a9c1c84dc8c684040326f27cdcc",
+      "rev_count": 982522,
+      "rev_date": "2026-04-18T21:33:21Z",
+      "scrape_date": "2026-04-21T06:37:57.889408Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.14.0",
+      "outputs_to_install": [
+        "out",
+        "out"
+      ],
+      "outputs": {
+        "dist": "/nix/store/g8f1k5vffmm61ni61a4ykwwymjlyykwm-python3.13-sympy-1.14.0-dist",
+        "out": "/nix/store/88zzfnlrabjbi8spphxjcik9dbd8dlz8-python3.13-sympy-1.14.0"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "python313Packages.sympy",
+      "broken": false,
+      "derivation": "/nix/store/jwb9dsfjs4f2ghf1w7y455ymbcr03xv0-python3.13-sympy-1.14.0.drv",
+      "description": "Python library for symbolic mathematics",
+      "install_id": "sympy",
+      "license": "BSD-3-Clause",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b12141ef619e0a9c1c84dc8c684040326f27cdcc",
+      "name": "python3.13-sympy-1.14.0",
+      "pname": "sympy",
+      "rev": "b12141ef619e0a9c1c84dc8c684040326f27cdcc",
+      "rev_count": 982522,
+      "rev_date": "2026-04-18T21:33:21Z",
+      "scrape_date": "2026-04-21T07:46:07.912548Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.14.0",
+      "outputs_to_install": [
+        "out",
+        "out"
+      ],
+      "outputs": {
+        "dist": "/nix/store/lnvsaifxfjzaj6q0kzyd224r578i0z7v-python3.13-sympy-1.14.0-dist",
+        "out": "/nix/store/g6946gzhr39skzm7ja0mrpxw0s240yjp-python3.13-sympy-1.14.0"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "python313Packages.typing-extensions",
+      "broken": false,
+      "derivation": "/nix/store/vmvqjm1ahr6aqwqf36lvp2ix8c4bkfrf-python3.13-typing-extensions-4.15.0.drv",
+      "description": "Backported and Experimental Type Hints for Python",
+      "install_id": "typing-extensions",
+      "license": "Python-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b12141ef619e0a9c1c84dc8c684040326f27cdcc",
+      "name": "python3.13-typing-extensions-4.15.0",
+      "pname": "typing-extensions",
+      "rev": "b12141ef619e0a9c1c84dc8c684040326f27cdcc",
+      "rev_count": 982522,
+      "rev_date": "2026-04-18T21:33:21Z",
+      "scrape_date": "2026-04-21T06:38:00.845045Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "4.15.0",
+      "outputs_to_install": [
+        "out",
+        "out",
+        "out"
+      ],
+      "outputs": {
+        "dist": "/nix/store/gdlr8x7z4qknlxhghihbcgm3jdsbf4lh-python3.13-typing-extensions-4.15.0-dist",
+        "out": "/nix/store/m5pcggas3k136avj8xb9yhzkg1zrwsbn-python3.13-typing-extensions-4.15.0"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "python313Packages.typing-extensions",
+      "broken": false,
+      "derivation": "/nix/store/qbcyibz6lnfd3a0d8g76v9s9palbbzhn-python3.13-typing-extensions-4.15.0.drv",
+      "description": "Backported and Experimental Type Hints for Python",
+      "install_id": "typing-extensions",
+      "license": "Python-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b12141ef619e0a9c1c84dc8c684040326f27cdcc",
+      "name": "python3.13-typing-extensions-4.15.0",
+      "pname": "typing-extensions",
+      "rev": "b12141ef619e0a9c1c84dc8c684040326f27cdcc",
+      "rev_count": 982522,
+      "rev_date": "2026-04-18T21:33:21Z",
+      "scrape_date": "2026-04-21T07:46:11.081289Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "4.15.0",
+      "outputs_to_install": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "outputs": {
+        "dist": "/nix/store/alv0gh53fn19qb5h3p5dvsjvqvc3qwj9-python3.13-typing-extensions-4.15.0-dist",
+        "out": "/nix/store/llv9b1i1c1j8dzkakysmgn99nicjlcs1-python3.13-typing-extensions-4.15.0"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "python3Packages.torch",
+      "broken": false,
+      "derivation": "/nix/store/myjfjpc31pcif1idswiffpwsbbwxwjkb-python3.13-torch-2.10.0.drv",
+      "description": "PyTorch: Tensors and Dynamic neural networks in Python with strong GPU acceleration",
+      "install_id": "torch",
+      "license": "BSD-3-Clause",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=6c9a78c09ff4d6c21d0319114873508a6ec01655",
+      "name": "python3.13-torch-2.10.0",
+      "pname": "torchWithCuda",
+      "rev": "6c9a78c09ff4d6c21d0319114873508a6ec01655",
+      "rev_count": 967235,
+      "rev_date": "2026-03-21T15:16:39Z",
+      "scrape_date": "2026-04-23T08:48:13.238635217Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "python3.13-torch-2.10.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "cxxdev": "/nix/store/750bf106crl7p4fnw5f2qmj2k8kdpmhx-python3.13-torch-2.10.0-cxxdev",
+        "dev": "/nix/store/ah09a043flq3d4ssr69gcly3xr3jq82p-python3.13-torch-2.10.0-dev",
+        "dist": "/nix/store/xa2ihzf7nmank01w90aw5f6gd0x89ymh-python3.13-torch-2.10.0-dist",
+        "lib": "/nix/store/19fa8v5p9n4x59v8652n7y6q9xxmqqhl-python3.13-torch-2.10.0-lib",
+        "out": "/nix/store/3yiici44dm1w5dyajp89wvvf6iw4zh7l-python3.13-torch-2.10.0"
+      },
+      "system": "aarch64-linux",
+      "group": "torch",
+      "priority": 5
+    },
+    {
+      "attr_path": "python3Packages.torch",
+      "broken": false,
+      "derivation": "/nix/store/ajyxli1a8zqr0s1nyfa1kmghzpkbf74z-python3.13-torch-2.10.0.drv",
+      "description": "PyTorch: Tensors and Dynamic neural networks in Python with strong GPU acceleration",
+      "install_id": "torch",
+      "license": "BSD-3-Clause",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=6c9a78c09ff4d6c21d0319114873508a6ec01655",
+      "name": "python3.13-torch-2.10.0",
+      "pname": "torchWithCuda",
+      "rev": "6c9a78c09ff4d6c21d0319114873508a6ec01655",
+      "rev_count": 967235,
+      "rev_date": "2026-03-21T15:16:39Z",
+      "scrape_date": "2026-04-23T08:48:13.238659302Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "python3.13-torch-2.10.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "cxxdev": "/nix/store/3sw0gzpdwk2jp7kh4hhy69v75lzjfvdn-python3.13-torch-2.10.0-cxxdev",
+        "dev": "/nix/store/ncv0z35hl0l9qnnycbk3hrj1gmipnn4g-python3.13-torch-2.10.0-dev",
+        "dist": "/nix/store/j5722dz15mxwzv81h0amcv3py5nhwsyc-python3.13-torch-2.10.0-dist",
+        "lib": "/nix/store/rs78ghvaf9d4xf27wcd6pfl63nqz6q7d-python3.13-torch-2.10.0-lib",
+        "out": "/nix/store/qhc7ddf7zh8r35nqa37wgyphsfqf232i-python3.13-torch-2.10.0"
+      },
+      "system": "x86_64-linux",
+      "group": "torch",
+      "priority": 5
+    },
+    {
+      "attr_path": "python3Packages.torchvision",
+      "broken": false,
+      "derivation": "/nix/store/l45nl21c890cqdfbl93s0g51mxpwnn6h-python3.13-torchvision-0.25.0.drv",
+      "description": "PyTorch vision library",
+      "install_id": "torchvision",
+      "license": "BSD-3-Clause",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=6c9a78c09ff4d6c21d0319114873508a6ec01655",
+      "name": "python3.13-torchvision-0.25.0",
+      "pname": "torchvision",
+      "rev": "6c9a78c09ff4d6c21d0319114873508a6ec01655",
+      "rev_count": 967235,
+      "rev_date": "2026-03-21T15:16:39Z",
+      "scrape_date": "2026-04-23T08:48:13.238692575Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.25.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dist": "/nix/store/lnck6a3r9g171lhkh2gjgi4588hw6k56-python3.13-torchvision-0.25.0-dist",
+        "out": "/nix/store/9mx4z2qzqcs1dab2k4hddw64dblq587y-python3.13-torchvision-0.25.0"
+      },
+      "system": "aarch64-linux",
+      "group": "torchvision",
+      "priority": 5
+    },
+    {
+      "attr_path": "python3Packages.torchvision",
+      "broken": false,
+      "derivation": "/nix/store/aa4f50x0w63yh3w30zvyxdnhkjrzaq5f-python3.13-torchvision-0.25.0.drv",
+      "description": "PyTorch vision library",
+      "install_id": "torchvision",
+      "license": "BSD-3-Clause",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=6c9a78c09ff4d6c21d0319114873508a6ec01655",
+      "name": "python3.13-torchvision-0.25.0",
+      "pname": "torchvision",
+      "rev": "6c9a78c09ff4d6c21d0319114873508a6ec01655",
+      "rev_count": 967235,
+      "rev_date": "2026-03-21T15:16:39Z",
+      "scrape_date": "2026-04-23T08:48:13.238700149Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.25.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dist": "/nix/store/mf26dk4rdwjdc7jb0kxy04s5cbcl82ky-python3.13-torchvision-0.25.0-dist",
+        "out": "/nix/store/lcbjhh5xgllablc0fw7g066gr05048hb-python3.13-torchvision-0.25.0"
+      },
+      "system": "x86_64-linux",
+      "group": "torchvision",
+      "priority": 5
+    }
+  ]
+}
